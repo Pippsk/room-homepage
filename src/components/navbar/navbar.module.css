@@ -1,0 +1,32 @@
+.container {
+  padding: 30px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+}
+
+.menu_btn {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.logo_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 70px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .menu_btn {
+    display: none;
+  }
+}
