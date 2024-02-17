@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.imageContainer {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+.image {
+  object-fit: cover;
+}
+
+.textContainer {
+  background-color: var(--white);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer p {
+  color: var(--dark-gray);
+  font-size: 12px;
+  line-height: 1.5;
+}

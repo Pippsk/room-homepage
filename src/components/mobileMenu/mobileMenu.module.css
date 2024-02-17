@@ -1,0 +1,46 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--overlay);
+}
+
+.menuBtn {
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+
+  top: 0;
+  padding: 30px;
+  background-color: var(--white);
+}
+
+.linksContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuLinks {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .menuBtn {
+    display: none;
+  }
+}
