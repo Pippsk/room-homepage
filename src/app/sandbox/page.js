@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import styles from "./sandbox.module.css";
 import { slideData } from "@/data/slides";
-
-import styles from "./page.module.css";
 import { useState } from "react";
 
-export default function Home() {
+const Sandbox = () => {
   const [slideIndex, setSlideIndex] = useState(1);
+
+  console.log(slideData.length);
 
   const nextSlide = () => {
     if (slideIndex !== slideData.length) {
@@ -29,7 +30,6 @@ export default function Home() {
       <section>
         {slideData.map((slide, index) => (
           <article
-            key={slide.id}
             className={
               slideIndex === index + 1 ? styles.container : styles.hidden
             }
@@ -78,4 +78,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default Sandbox;

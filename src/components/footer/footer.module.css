@@ -1,0 +1,30 @@
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 40px;
+}
+
+.aboutSection h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.aboutSection p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--dark-gray);
+}
+@media (min-width: 768px) {
+  .bottomSection {
+    flex-direction: row;
+  }
+}
